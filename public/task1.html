@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native JavaScript and DOM</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="container">
+        <button id="addButton">Add Item</button>
+    <button id="removeButton">Remove Item</button>
+    </div>
+    <div class="container">
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        const list = document.getElementById('list');
+
+        const addItem = () => {
+            const newItem = `Item ${list.children.length + 1}`;
+            listItems.push(newItem);
+            updateList();
+        };
+
+        const removeLastItem = () => {
+            if (listItems.length > 0) {
+                listItems.pop();
+                updateList();
+            } else {
+                alert("The list is empty")
+            }
+        };
+
+        const updateList = () => {
+            list.innerHTML = listItems.map(item => `<li>${item}</li>`).join('');
+        };
+
+        const addButton = document.getElementById('addButton');
+        addButton.addEventListener('click', addItem);
+
+        const removeButton = document.getElementById('removeButton');
+        removeButton.addEventListener('click', removeLastItem);
+
+        const listItems = [];
+    </script>
+</body>
+</html>

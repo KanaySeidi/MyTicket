@@ -1,0 +1,21 @@
+.section{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: #f0f0f0;
+}
+
+.button{
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(105, 105, 110);
+    color: #fff;
+}

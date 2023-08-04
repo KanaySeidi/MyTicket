@@ -1,0 +1,28 @@
+#searchInput{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    border: none;
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    font-size: 18px;
+}
